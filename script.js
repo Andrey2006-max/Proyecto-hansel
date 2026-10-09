@@ -9,7 +9,6 @@
 // Botón comenzar con música 🎵
 function irHistoria() {
 
-```
 const musica = document.getElementById("musica");
 
 if (musica) {
@@ -25,7 +24,7 @@ if (musica) {
 document.getElementById("historia").scrollIntoView({
     behavior: "smooth"
 });
-```
+
 
 }
 
