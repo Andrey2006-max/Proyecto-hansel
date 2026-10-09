@@ -7,19 +7,28 @@
 
 
 // Botón comenzar con música 🎵
-function irHistoria(){
+function irHistoria() {
 
-    const musica = document.getElementById("musica");
+```
+const musica = document.getElementById("musica");
 
-    if(musica){
-        musica.play();
-    }
+if (musica) {
+    musica.volume = 1;
 
-    document.getElementById("historia").scrollIntoView({
-        behavior:"smooth"
+    musica.play().then(() => {
+        console.log("La música comenzó correctamente");
+    }).catch(error => {
+        console.error("Error al reproducir la música:", error);
     });
+}
+
+document.getElementById("historia").scrollIntoView({
+    behavior: "smooth"
+});
+```
 
 }
+
 
 
 // ==========================
